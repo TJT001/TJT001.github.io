@@ -1,0 +1,25 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}',
+  $font-family-base: (
+    'Segoe UI',
+    'Microsoft YaHei',
+    'PingFang SC',
+    sans-serif
+  ),
+  $font-family-heading: (
+    'Segoe UI',
+    'Microsoft YaHei',
+    'PingFang SC',
+    sans-serif
+  )
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
